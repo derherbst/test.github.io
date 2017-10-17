@@ -1,0 +1,1 @@
+"use strict";var one=function(){alert("yuyuyuy")};

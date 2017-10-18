@@ -1,5 +1,22 @@
-$black: #000;
+@import "normalize.scss";
+@import "global/fonts.scss";
+@import "variables.scss";
+@import "global/layout.scss";
+@import "mixins.scss";
 
-body {
-  background: $black;
-}
+@import "blocks/body-wrapper.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/banner.scss";
+@import "blocks/slider.scss";
+@import "blocks/main-wrapper.scss";
+@import "blocks/intro.scss";
+@import "blocks/main-idea.scss";
+@import "blocks/video.scss";
+@import "blocks/conception.scss";
+@import "blocks/result.scss";
+@import "blocks/project-info.scss";
+@import "blocks/cases-tools.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-links.scss";

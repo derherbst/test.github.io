@@ -1,0 +1,22 @@
+.banner {
+  background-color: $greyLight;
+}
+
+.banner__inner {
+  @include on-center(1180px, 0 auto)
+}
+
+.banner__text-wrapper {
+  @include font(40px,1.23);
+  text-transform: uppercase;
+  font-family: FuturaPTDemi, "Arial", sans-serif;
+  margin: 0 80px;
+  padding-left: 255px;
+  padding-top: 170px;
+  padding-right: 120px;
+  padding-bottom: 125px;
+}
+
+.banner__website {
+  color: $grey;
+}

@@ -1,14 +1,19 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('fonts/opensans.woff') format('woff'),          url('fonts/opensans.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+    font-family: FuturaPTLight;
+    src: url('../../fonts/FuturaPTLight.otf');
+  }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('fonts/opensansbold.woff') format('woff'),
-      url('fonts/opensansbold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
+    font-family: FuturaPTBold;
+    src: url('../../fonts/FuturaPTBold.otf');
+  }
+
+@font-face {
+    font-family: FuturaPT;
+    src: url('../../fonts/FuturaPTBook.otf');
+  }
+
+@font-face {
+    font-family: FuturaPTDemi;
+    src: url('../../fonts/FuturaPTDemi.otf');
+  }

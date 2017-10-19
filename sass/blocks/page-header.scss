@@ -1,0 +1,18 @@
+.page-header {
+  height: 52px;
+  display: flex;
+}
+
+.page-header__inner {
+  @include on-center(1180px, 0 auto);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__tel {
+  @include font(16px,1);
+  font-family: FuturaPT, "Arial", sans-serif;
+}

@@ -5,7 +5,7 @@ var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var server = require("browser-sync").create();
-var imagemin = require('gulp-imagemin');
+//var imagemin = require('gulp-imagemin');
 var autoprefixer = require('autoprefixer');
 var postcss = require('gulp-postcss');
 
@@ -24,11 +24,11 @@ gulp.task('styles', function () {
     .pipe(server.stream());
 });
 
-gulp.task('image', function () {
-  gulp.src('img/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('img'));
-});
+//gulp.task('image', function () {
+//  gulp.src('img/*')
+//    .pipe(imagemin())
+//    .pipe(gulp.dest('img/min'));
+//});
 
 gulp.task('scripts', function () {
   gulp.src('js/*.js')
@@ -53,7 +53,7 @@ gulp.task('watch', function () {
   
   gulp.watch('js/*.js', ['scripts']);
   gulp.watch("sass/**/*.{scss,sass}", ['styles']);
-  gulp.watch("img/*", ['image']);
+//  gulp.watch("img/*", ['image']);
   gulp.watch("*.html").on("change", server.reload);
 });
 

@@ -1,0 +1,56 @@
+.result {
+  padding-bottom: 97px;
+}
+
+.result__inner {
+  text-align: center;
+  @include on-center(1020px, 0 auto);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.result__title {
+  @include font(60px, 1.25);
+  font-family: FuturaPTBold, "Arial", sans-serif;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.result__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+
+.result__list-item {
+  flex-basis: 300px;
+}
+
+.result__item-quantity {
+  @include font(120px, 1.1);
+  font-family: FuturaPTBold, "Arial", sans-serif;
+  position: relative;
+  span {
+    @include font(25px, 30px);
+    display: block;
+    position: absolute; 
+    right: 0px;
+    top: 15px;
+  }
+}
+
+.result__item-number {
+  padding-right: 40px;
+}
+
+.result__item-text {
+  padding: 0 20px;
+}
+
+.result__text {
+  text-align: left;
+  width: 665px;
+  padding-left: 235px;
+}

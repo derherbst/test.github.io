@@ -1,5 +1,6 @@
 .intro {
   background: url(/img/city.png) repeat-x center bottom transparent;
+  background-size: 100% 290px;
 }
 
 .intro__inner {
@@ -45,6 +46,28 @@
   width: 980px;
   height: 530px;
   background: url(/img/screen-bg.png) center center no-repeat #fff;
+  margin-bottom: 80px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 690px;
+    height: 69px;
+    background: url(/img/lamps.png);
+    top: -69px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 246px;
+    height: 490px;
+    background: url(/img/screen-after.png) 0 0 no-repeat;
+    bottom: -490px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
 }
 
 .intro__achievment {
@@ -73,8 +96,7 @@
   @include font(48px,1.25);
   font-family: FuturaPTBold, "Arial", sans-serif;
   span {
-    display: inline-block;
-    vertical-align: middle;
+    
   }
   &--kpi {
     @include font(127px,1.25);
@@ -87,4 +109,24 @@
   &--kpi {
     @include font(64px,1);
   }
+}
+
+.intro__lists-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 50px 370px;
+  margin: 0 auto;
+  width: 820px;
+  box-sizing: border-box;
+}
+
+.intro__list-name {
+  @include font(24px,1.25);
+  font-family: FuturaPTBold, "Arial", sans-serif;
+}
+
+.intro__list-item {
+  font-family: FuturaPT, "Arial", sans-serif;
 }

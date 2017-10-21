@@ -9,7 +9,12 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+//  align-items: center;
+}
+
+.page-header__logo,
+.page-header__tel {
+  align-self: center;
 }
 
 .page-header__tel {

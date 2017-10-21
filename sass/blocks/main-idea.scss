@@ -1,0 +1,82 @@
+.main-idea {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.main-idea__inner {
+  @include on-center(1020px, 0 auto);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-idea__about-wrapper {
+  position: relative;
+}
+
+.main-idea__title {
+  @include font(60px, 1.25);
+  font-family: FuturaPTBold, "Arial", sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.main-idea__text {
+  width: 580px;
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+.main-idea__info {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 320px;
+  height: 420px;
+  background: url(/img/info-bg.png) center center no-repeat #fff;
+}
+
+.main-idea__stars {
+  padding-top: 40px;
+  padding-bottom: 47px;
+  background: url(/img/brace.png) bottom center no-repeat;
+  background-size: 100%;
+  &>span {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.main-idea__stars-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: $white;
+  padding-bottom: 50px;
+}
+
+.main-idea__stars-item {
+  width: 280px;
+}
+
+.main-idea__stars-photo {
+  display: block;
+  margin-bottom: 18px;
+}
+
+.main-idea__stars-name {
+  @include font(20px, 1.25);
+  font-family: FuturaPTBold, "Arial", sans-serif;
+}
+
+.main-idea__stars-activity {
+  @include font(18px, 1.1);
+  color: $grey;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.main-idea__stars-role {
+  @include font(20px,1.5);
+}

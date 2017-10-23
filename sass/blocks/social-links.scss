@@ -1,0 +1,34 @@
+.social-links {
+  display: block;
+  width: 380px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 54px;
+}
+
+.social-links__link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: no-repeat center center;
+  background-size: 25px 25px;
+  &--vk {
+    background-image: url(/img/vk.png);
+  }
+  &--tw {
+    background-image: url(/img/tw.png);
+  }
+  &--fb {
+    background-image: url(/img/fb.png);
+  }
+  &--lin {
+    background-image: url(/img/32.png);
+  }
+  &--insta {
+    background-image: url(/img/inst.png);
+  }
+}

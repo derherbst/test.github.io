@@ -20,6 +20,10 @@
   margin-right: 55px;
 }
 
+.intro__aside-period {
+  margin-bottom: 20px;
+}
+
 .intro__aside-title,
 .intro__aside-text {
   @include font(16px, 1.125);
@@ -56,17 +60,6 @@
     top: -69px;
     left: 50%;
     transform: translateX(-50%);
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    width: 246px;
-    height: 490px;
-    background: url(/img/screen-after.png) 0 0 no-repeat;
-    bottom: -490px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
   }
 }
 

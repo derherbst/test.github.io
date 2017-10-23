@@ -1,5 +1,7 @@
 .result {
   padding-bottom: 97px;
+  background: url(/img/bench-bg.png) no-repeat center top;
+  background-size: 100% 200px;
 }
 
 .result__inner {
@@ -12,7 +14,7 @@
 .result__title {
   @include font(60px, 1.25);
   font-family: FuturaPTBold, "Arial", sans-serif;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   text-transform: uppercase;
 }
 

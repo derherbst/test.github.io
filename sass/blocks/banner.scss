@@ -15,8 +15,54 @@
   padding-top: 170px;
   padding-right: 120px;
   padding-bottom: 125px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background: center center no-repeat;
+  }
+  &--top {
+    &::before {
+      background-image: url(/img/pgu-logo.png);
+      width: 155px;
+      height: 120px;
+      top: 170px;
+      left: 0;
+      background-size: 155px 120px;
+    }
+  }
+  &--bottom {
+    &::before {
+      background-image: url(/img/telephone.png);
+      width: 125px;
+      height: 125px;
+      top: 170px;
+      left: 43px;
+      background-size: 125px 125px;
+    }
+  }
 }
 
 .banner__website {
   color: $grey;
+  margin-bottom: 32px;
+}
+
+.banner__wait {
+  @include font(16px,18px);
+  font-family: FuturaPTLight, "Arial", sans-serif;
+  display: block;
+  text-transform: capitalize;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background: url(/img/wait.png) no-repeat center center;
+    background-size: 23px 23px;
+  }
 }

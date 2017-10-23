@@ -1,3 +1,7 @@
+.cases-tools {
+  padding: 50px 0;
+}
+
 .cases-tools__inner {
   @include on-center(550px, 0 auto);
   display: flex;
@@ -8,14 +12,12 @@
 .cases-tools__all-cases {
   background: url(/img/cases.png) no-repeat center left;
   background-size: 16px 22px;
-  span {
-    padding-left: 25px;
-  }
+  padding-left: 25px;
 }
 
 .cases-tools__share {
-  width: 32px;
-  height: 38px;
+  width: 25px;
+  height: 25px;
   background: url(/img/share.png) no-repeat center center;
   background-size: 32px 38px;
 }

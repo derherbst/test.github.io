@@ -485,6 +485,10 @@ img {
   line-height: 1;
   font-family: FuturaPT, "Arial", sans-serif; }
 
+.logo--footer {
+  display: block;
+  text-align: center; }
+
 .main-nav {
   color: #000;
   background-color: #fff; }
@@ -545,10 +549,48 @@ img {
   padding-left: 255px;
   padding-top: 170px;
   padding-right: 120px;
-  padding-bottom: 125px; }
+  padding-bottom: 125px;
+  position: relative; }
+  .banner__text-wrapper::before {
+    content: "";
+    position: absolute;
+    background: center center no-repeat; }
+  .banner__text-wrapper--top::before {
+    background-image: url(/img/pgu-logo.png);
+    width: 155px;
+    height: 120px;
+    top: 170px;
+    left: 0;
+    background-size: 155px 120px; }
+  .banner__text-wrapper--bottom::before {
+    background-image: url(/img/telephone.png);
+    width: 125px;
+    height: 125px;
+    top: 170px;
+    left: 43px;
+    background-size: 125px 125px; }
 
 .banner__website {
-  color: #999; }
+  color: #999;
+  margin-bottom: 32px; }
+
+.banner__wait {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: FuturaPTLight, "Arial", sans-serif;
+  display: block;
+  text-transform: capitalize;
+  padding-left: 30px;
+  position: relative; }
+  .banner__wait::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    background: url(/img/wait.png) no-repeat center center;
+    background-size: 23px 23px; }
 
 .slider {
   position: relative; }
@@ -597,6 +639,9 @@ img {
   width: 200px;
   margin-right: 55px; }
 
+.intro__aside-period {
+  margin-bottom: 20px; }
+
 .intro__aside-title,
 .intro__aside-text {
   font-size: 16px;
@@ -634,17 +679,6 @@ img {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-  .intro__achievements-list::after {
-    content: "";
-    position: absolute;
-    width: 246px;
-    height: 490px;
-    background: url(/img/screen-after.png) 0 0 no-repeat;
-    bottom: -490px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    z-index: 1; }
 
 .intro__achievment {
   text-align: center;
@@ -739,7 +773,26 @@ img {
   right: 0;
   width: 320px;
   height: 420px;
-  background: url(/img/info-bg.png) center center no-repeat #fff; }
+  background: url(/img/info-bg.png) center center no-repeat #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.main-idea__info-text {
+  font-size: 24px;
+  line-height: 1.25;
+  display: block;
+  width: 240px;
+  text-align: center;
+  padding-top: 120px;
+  background: url(/img/info.png) top center no-repeat;
+  background-size: 30px 78px; }
 
 .main-idea__stars {
   padding-top: 40px;
@@ -846,10 +899,8 @@ img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-bottom: 40px; }
-
-.conception__about {
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px; }
+    .conception__item:first-child .conception__about {
+      padding-left: 40px; }
 
 .conception__name {
   font-size: 24px;
@@ -863,7 +914,9 @@ img {
   padding-right: 35px; }
 
 .result {
-  padding-bottom: 97px; }
+  padding-bottom: 97px;
+  background: url(/img/bench-bg.png) no-repeat center top;
+  background-size: 100% 200px; }
 
 .result__inner {
   text-align: center;
@@ -876,7 +929,7 @@ img {
   font-size: 60px;
   line-height: 1.25;
   font-family: FuturaPTBold, "Arial", sans-serif;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   text-transform: uppercase; }
 
 .result__list {
@@ -969,6 +1022,9 @@ img {
   font-style: italic;
   text-align: center; }
 
+.cases-tools {
+  padding: 50px 0; }
+
 .cases-tools__inner {
   width: 550px;
   margin: 0 auto;
@@ -985,12 +1041,85 @@ img {
 
 .cases-tools__all-cases {
   background: url(/img/cases.png) no-repeat center left;
-  background-size: 16px 22px; }
-  .cases-tools__all-cases span {
-    padding-left: 25px; }
+  background-size: 16px 22px;
+  padding-left: 25px; }
 
 .cases-tools__share {
-  width: 32px;
-  height: 38px;
+  width: 25px;
+  height: 25px;
   background: url(/img/share.png) no-repeat center center;
   background-size: 32px 38px; }
+
+.page-footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 0; }
+
+.page-footer__inner {
+  width: 1020px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.page-footer__menu-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 37px; }
+
+.page-footer__header {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+.page-footer__list a {
+  font-size: 14px;
+  line-height: 1;
+  font-family: FuturaPTLight, "Arial", sans-serif;
+  color: #999; }
+
+.social-links {
+  display: block;
+  width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 54px; }
+
+.social-links__link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: no-repeat center center;
+  background-size: 25px 25px; }
+  .social-links__link--vk {
+    background-image: url(/img/vk.png); }
+  .social-links__link--tw {
+    background-image: url(/img/tw.png); }
+  .social-links__link--fb {
+    background-image: url(/img/fb.png); }
+  .social-links__link--lin {
+    background-image: url(/img/32.png); }
+  .social-links__link--insta {
+    background-image: url(/img/inst.png); }
